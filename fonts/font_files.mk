@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
     Roboto-Regular.ttf \
     Linotte.ttf \
     Manrope-VF.ttf \
+    Fucek.ttf \
     NotoSans-Italic-VF.ttf \
     NotoSans-VF.ttf \
     OppoSans-En-Regular.ttf \

@@ -123,6 +123,21 @@
       <axis tag="ital" stylevalue="1" />
       <axis tag="wdth" stylevalue="100" />
       <axis tag="wght" stylevalue="620" />
+   
+    <family customizationType="new-named-family" name="fucek">
+        <font weight="400" style="normal">Fucek.ttf</font>
+    </family>
+    <alias name="fucek-semi-bold" to="fucek" weight="600" />
+    <alias name="fucek-bold" to="fucek" weight="700" />
+    <alias name="times" to="fucek" />
+    <alias name="times new roman" to="fucek" />
+    <alias name="palatino" to="fucek" />
+    <alias name="georgia" to="fucek" />
+    <alias name="baskerville" to="fucek" />
+    <alias name="goudy" to="fucek" />
+    <alias name="fantasy" to="fucek" />
+    <alias name="ITC Stone Serif" to="fucek" />
+   
     </font>
     <font weight="600" style="italic">OppoSans-En-Regular.ttf
       <axis tag="ital" stylevalue="1" />

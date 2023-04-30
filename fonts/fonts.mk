@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
     FontDosisOverlay \
     FontManropeOverlay \
     FontNotoSansOverlay \
+    FontFucekSourceOverlay \
     FontRecursiveCasualOverlay \
     FontRecursiveLinearOverlay \
     FontRobotoOverlay \

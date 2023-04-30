@@ -18,6 +18,7 @@ FONTS = {
     "Source Sans": "source-sans",
     "Source Serif": "serif",
     "Linotte": "linotte",
+    "Fucek": "fucek",
 }
 
 # Android.bp
