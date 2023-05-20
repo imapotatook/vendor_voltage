@@ -10,8 +10,8 @@ PRODUCT_PACKAGES += \
     ThemesStub \
     GameSpace \
     ParallelSpace \
-    SetupWizard \
-    Seedvault
+    Seedvault \
+    #SetupWizard 
 
 ifeq ($(VOLTAGE_BUILD_TYPE), OFFICIAL)
     PRODUCT_PACKAGES += \
@@ -30,9 +30,10 @@ ifeq ($(strip $(SMARTCOOKIEWEB)),true)
 endif
 
 # Graphene Apps
-ifeq ($(GrapheneApps),true)
+ifeq ($(WITH_GAPPS),false)
      PRODUCT_PACKAGES += \
-         Apps
+         Apps \
+         Camera
 endif
 
 # VoltageOS UDFPS icon animations
@@ -83,7 +84,7 @@ PRODUCT_PACKAGES += \
     start-ssh
 
 # turbo
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     Turbo
 
 # rsync

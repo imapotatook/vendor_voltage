@@ -80,7 +80,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.sip.voip.xml
 
 # Enable SIP+VoIP on all targets
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/voltage/prebuilt/google/etc/permissions/privapp-permissions-googleapps-turbo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-googleapps-turbo.xml
 
 # Enable wireless Xbox 360 controller support
@@ -202,6 +202,12 @@ include vendor/voltage/config/version.mk
 
 # BootAnimation
 include vendor/voltage/config/bootanimation.mk
+
+# gms
+WITH_GAPPS ?= true
+ifeq ($(WITH_GAPPS),true)
+$(call inherit-product, vendor/gms/products/gms.mk)
+endif
 
 # Fonts
 $(call inherit-product, vendor/voltage/fonts/fonts.mk)
