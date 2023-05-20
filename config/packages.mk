@@ -33,7 +33,8 @@ endif
 ifeq ($(WITH_GAPPS),false)
      PRODUCT_PACKAGES += \
          Apps \
-         Camera
+         Camera \
+         GmsCompat
 endif
 
 # VoltageOS UDFPS icon animations
