@@ -177,7 +177,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/voltage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/voltage/overlay/common
 
 # Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED ?= true
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
 PRODUCT_PACKAGES += \
     FaceUnlockService
