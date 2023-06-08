@@ -37,6 +37,10 @@ ifeq ($(WITH_GAPPS),false)
          GmsCompat
 endif
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 # VoltageOS UDFPS icon animations
 EXTRA_UDFPS_ANIMATIONS ?= false
 ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
