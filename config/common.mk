@@ -19,6 +19,45 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
 
+
+#Battery Improvement
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    dalvik.vm.checkjini=false \
+    ro.kernel.android.checkjni=0 \
+    ro.kernel.checkjni=0 \
+    ro.config.nocheckin=1 \
+    debug.systemui.latency_tracking=0 \
+    persist.sample.eyetracking.log=0 \
+    ro.com.google.locationfeatures=0 \
+    ro.com.google.networklocation=0 \
+    media.metrics.enabled=0 \
+    sys.debug.watchdog=0 \
+    logd.statistics=0 \
+    media.metrics=0 \
+    config.stats=0 \
+    persist.sys.loglevel=0 \
+    sys.log.app=0 \
+    persist.traced.enable=0 \
+    logd.statistics=0 \
+    persist.sample.eyetracking.log=0 \
+    debug.atrace.tags.enableflags=0 \
+    debugtool.anrhistory=0 \
+    ro.debuggable=1 \
+    profiler.debugmonitor=false \
+    profiler.launch=false \
+    profiler.hung.dumpdobugreport=false \
+    trustkernel.log.state=disable \
+    debug.mdpcomp.logs=0 \
+    debug.atrace.tags.enableflags=0 \
+    pm.sleep_mode=1 \
+    profiler.force_disable_ulog=true \
+    profiler.force_disable_err_rpt=true \
+    ro.logd.size.stats=0 \
+    debug.atrace.tags.enableflags=0 \
+    persist.service.pcsync.enable=0 \
+    persist.service.lgospd.enable=0
+
+
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=android-google
@@ -213,10 +252,10 @@ include vendor/voltage/config/version.mk
 include vendor/voltage/config/bootanimation.mk
 
 # gms
-WITH_GAPPS ?= true
-ifeq ($(WITH_GAPPS),true)
-$(call inherit-product, vendor/gms/products/gms.mk)
-endif
+#WITH_GAPPS ?= true
+#ifeq ($(WITH_GAPPS),true)
+#$(call inherit-product, vendor/gms/products/gms.mk)
+#endif
 
 # Fonts
 $(call inherit-product, vendor/voltage/fonts/fonts.mk)
